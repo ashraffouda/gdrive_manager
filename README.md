@@ -20,4 +20,4 @@ python gdrive_manager/manage.py clean-perms
 python gdrive_manager/manage.py delete-items 
 ```
 * you can specify `--force` incase you want to automatically delete files without confirmation
-* also `--prefix` to delete all files/folder with the specified prefix default is `.`
+* also `--prefix` to delete all files/folder with the specified prefix default is `._`
