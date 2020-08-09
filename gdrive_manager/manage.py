@@ -37,7 +37,7 @@ def is_confirmed(question):
             return False
 @cli.command()
 @click.option("--prefix", default="._", help="prefix of files you want to delete")
-@click.option("--cred", default="./my_account_credentials.json", help="Path to your Google API credentials")
+@click.option("--cred", default="./credentials.json", help="Path to your Google API credentials")
 @click.option('--force', is_flag=True, help="force delete without confirmation")
 def delete_items(prefix, cred, force):
     SCOPES = ["https://www.googleapis.com/auth/drive", "https://www.googleapis.com/auth/drive.file"]
